@@ -1,0 +1,2 @@
+C:\Users\taamojo8\Documents\Visual Studio 2015\Projects\OnionCrudAppJonas\CrudApp_Infrastructure\obj\Debug\CrudApp_Infrastructure.Migrations.inital.resources
+C:\Users\taamojo8\Documents\Visual Studio 2015\Projects\OnionCrudAppJonas\CrudApp_Infrastructure\obj\Debug\CrudApp_Infrastructure.csproj.GenerateResource.Cache

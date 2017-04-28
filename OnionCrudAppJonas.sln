@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudApp_Core", "CrudApp_Core\CrudApp_Core.csproj", "{B0110E73-D63E-4BE1-90ED-6AC3935969AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudApp_Infrastructure", "CrudApp_Infrastructure\CrudApp_Infrastructure.csproj", "{ABCE7128-5EEB-4FC6-A8AB-D900DC990011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudApp_Web", "CrudApp-Web\CrudApp_Web.csproj", "{C3817922-9C0D-4BDF-855E-0BF33D332FE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0110E73-D63E-4BE1-90ED-6AC3935969AD}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{B0110E73-D63E-4BE1-90ED-6AC3935969AD}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{B0110E73-D63E-4BE1-90ED-6AC3935969AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0110E73-D63E-4BE1-90ED-6AC3935969AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABCE7128-5EEB-4FC6-A8AB-D900DC990011}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{ABCE7128-5EEB-4FC6-A8AB-D900DC990011}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{ABCE7128-5EEB-4FC6-A8AB-D900DC990011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABCE7128-5EEB-4FC6-A8AB-D900DC990011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3817922-9C0D-4BDF-855E-0BF33D332FE8}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{C3817922-9C0D-4BDF-855E-0BF33D332FE8}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{C3817922-9C0D-4BDF-855E-0BF33D332FE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3817922-9C0D-4BDF-855E-0BF33D332FE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
