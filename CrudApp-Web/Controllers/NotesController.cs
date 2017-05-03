@@ -286,6 +286,55 @@ namespace CrudApp_Web.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult Task(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            Note note = _db.Get(id.Value);
+
+            if (note.UserId != User.Identity.GetUserId())
+            {
+                return RedirectToAction("Index");
+            }
+
+            if (note == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(note);
+        }
+        [HttpPost, ActionName("Task")]
+        public ActionResult TaskConfirm(Note note, LoginViewModel model)
+        {
+            ExchangeService service = new ExchangeService(ExchangeVersion.Exchange2013);
+
+
+            service.Credentials = new WebCredentials(note.Email, model.Password);
+
+
+            service.UseDefaultCredentials = true;
+
+            service.AutodiscoverUrl(note.Email);
+
+            Task task = new Task(service);
+
+
+            task.Subject = note.Title;
+            task.Body = new MessageBody(note.Text);
+            task.StartDate = Convert.ToDateTime(note.start);
+            task.DueDate = Convert.ToDateTime(note.end);
+
+
+            task.Save();
+
+            return RedirectToAction("Index");
+        }
+
+
 
     }
 }

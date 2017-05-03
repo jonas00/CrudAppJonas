@@ -297,6 +297,7 @@
     <Content Include="Views\Note\Back.cshtml" />
     <Content Include="Views\Note\Archiv.cshtml" />
     <Content Include="Views\Note\Appointment.cshtml" />
+    <Content Include="Views\Note\Task.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

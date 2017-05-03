@@ -109,6 +109,10 @@
     <Compile Include="Migrations\201705031200323_end.Designer.cs">
       <DependentUpon>201705031200323_end.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705031248000_task.cs" />
+    <Compile Include="Migrations\201705031248000_task.Designer.cs">
+      <DependentUpon>201705031248000_task.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NoteContext.cs" />
     <Compile Include="NoteRepository.cs" />
@@ -134,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705031200323_end.resx">
       <DependentUpon>201705031200323_end.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705031248000_task.resx">
+      <DependentUpon>201705031248000_task.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

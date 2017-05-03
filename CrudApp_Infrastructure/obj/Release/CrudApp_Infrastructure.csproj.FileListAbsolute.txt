@@ -37,3 +37,4 @@ C:\Users\taamojo8\Documents\Visual Studio 2015\Projects\OnionCrudAppJonas\CrudAp
 C:\Users\taamojo8\Documents\Visual Studio 2015\Projects\OnionCrudAppJonas\CrudApp_Infrastructure\obj\Release\CrudApp.Infrastructure.pdb
 C:\Users\taamojo8\Documents\Visual Studio 2015\Projects\OnionCrudAppJonas\CrudApp_Infrastructure\obj\Release\CrudApp_Infrastructure.Migrations.start.resources
 C:\Users\taamojo8\Documents\Visual Studio 2015\Projects\OnionCrudAppJonas\CrudApp_Infrastructure\obj\Release\CrudApp_Infrastructure.Migrations.end.resources
+C:\Users\taamojo8\Documents\Visual Studio 2015\Projects\OnionCrudAppJonas\CrudApp_Infrastructure\obj\Release\CrudApp_Infrastructure.Migrations.task.resources
