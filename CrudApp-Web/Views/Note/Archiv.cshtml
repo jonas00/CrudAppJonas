@@ -24,6 +24,9 @@
         <th>
             @Html.DisplayNameFor(model => model.Email)
         </th>
+        <th>
+            Actions
+        </th>
 
         <th></th>
     </tr>
@@ -50,7 +53,6 @@
             <td>
                 @Html.ActionLink("Rückgänig", "Back", new { id = item.Id }, new { @class = "btn btn-default btn-md" })
                 @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-default btn-md" })
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id}, new { @class = "btn btn-default btn-md"})
                 @Html.ActionLink("Details", "Details", new { id = item.Id}, new { @class = "btn btn-default btn-md"})
             </td>
         </tr>

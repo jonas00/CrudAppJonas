@@ -82,15 +82,17 @@ namespace CrudApp_Web.Controllers
 
         // GET: Note/Edit/5
         [Authorize]
+        [HttpGet]
         public ActionResult Edit(int? id)
         {
+            Note note = _db.Get(id.Value);
 
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            Note note = _db.Get(id.Value);
+           
 
             if (note.UserId != User.Identity.GetUserId())
             {
@@ -112,7 +114,7 @@ namespace CrudApp_Web.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Text,Autor,Tag")] Note note)
+        public ActionResult Edit([Bind(Exclude = "start,end")]Note note)
         {
             Note oldnote = _db.Get(note.Id);
             if (oldnote.UserId!= User.Identity.GetUserId())

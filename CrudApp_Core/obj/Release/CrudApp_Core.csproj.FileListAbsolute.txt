@@ -31,4 +31,3 @@ C:\Users\taamojo8\Documents\Visual Studio 2015\Projects\OnionCrudAppJonas\CrudAp
 C:\Users\taamojo8\Documents\Visual Studio 2015\Projects\OnionCrudAppJonas\CrudApp_Core\bin\Release\System.Web.WebPages.Deployment.xml
 C:\Users\taamojo8\Documents\Visual Studio 2015\Projects\OnionCrudAppJonas\CrudApp_Core\obj\Release\CrudApp_Core.dll
 C:\Users\taamojo8\Documents\Visual Studio 2015\Projects\OnionCrudAppJonas\CrudApp_Core\obj\Release\CrudApp_Core.pdb
-C:\Users\taamojo8\Documents\Visual Studio 2015\Projects\OnionCrudAppJonas\CrudApp_Core\obj\Release\CrudApp_Core.csprojResolveAssemblyReference.cache
