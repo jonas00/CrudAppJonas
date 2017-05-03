@@ -4,6 +4,8 @@
     ViewBag.Title = "Appointment";
 }
 
+@using Kendo.Mvc.UI
+
 <h2>Appointment</h2>
 
 @using (Html.BeginForm())
@@ -39,18 +41,19 @@
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.start, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.start, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.start, "", new { @class = "text-danger" })
-            </div>
+        <div class="demo-section k-content">
+            <h4>Remind me on</h4>
+            @(Html.Kendo().DateTimePicker()
+        .Name("datetimepicker")
+        .Value(DateTime.Now)
+        .HtmlAttributes(new { style = "width:100%;" })
+            )
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.end, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.end, htmlAttributes: new { @class = "lead col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.end, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.TextBoxFor(model => model.end, new { @class = "datetimepicker form-control" })
                 @Html.ValidationMessageFor(model => model.end, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -67,3 +70,11 @@
 <div>
     @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default btn-s" })
 </div>
+
+<script>
+    $(document).ready(function () {
+        $('.datetimepicker').datetimepicker({
+            format: 'lll'
+        });
+    });
+</script>
