@@ -28,15 +28,14 @@ namespace CrudApp_Core
             [Display(Name = "Letzte änderung")]
             public DateTime Created { get; set; }
             [Display(Name = "Start time")]
-            //[DisplayFormat(DataFormatString = "", ApplyFormatInEditMode = true)]
             [DataType(DataType.Date)]
             public DateTime? start { get; set; }
             [DataType(DataType.Date)]
-            //[DisplayFormat(DataFormatString = "{0:T}", ApplyFormatInEditMode = true)]
+            [DisplayFormat(DataFormatString = "{0:dd.mm.yy}", ApplyFormatInEditMode = true)]
             [Display(Name = "End time")]
             public DateTime? end { get; set; }
 
-        
+
     }
 
 }
